@@ -14,7 +14,15 @@
         <button ng-click="cowsayCtrl.pop()">Retrieve It!</button>
       </div>
     </section>
-    <pre>{{ cowsayCtrl.history }}</pre>
+    <section>
+      <div class="cowtput">
+      <pre>History:
+      <div  ng-repeat="(key, value) in cowsayCtrl.history">
+      {{key}}:{{cowsayCtrl.history[key]}}
+      </div>
+      </pre>
+    </section>
+    </div>
   </main>
 
 
