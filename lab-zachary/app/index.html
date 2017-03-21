@@ -18,7 +18,7 @@
       <div class="cowtput">
       <pre>History:
       <div  ng-repeat="(key, value) in cowsayCtrl.history">
-      {{key}}:{{cowsayCtrl.history[key]}}
+      {{cowsayCtrl.history.length===0 ? null : key+1+':'}}{{cowsayCtrl.history.length==0 ?  null : cowsayCtrl.history[key]}}
       </div>
       </pre>
     </section>
