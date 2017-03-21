@@ -1,0 +1,40 @@
+$bgColor: #eee;
+$sectionColor: #fff;
+$inputHeight: 3em;
+
+
+body {
+    background: $bgColor;
+    section {
+      background:$sectionColor;
+      width:80%;
+      padding:20px;
+      margin:0 auto 0 auto;
+      div.cowtput{
+        margin: 2em auto 2em auto;
+        width: 70%;
+        button {
+          width:20%;
+          height: $inputHeight;
+          font-size: .8em;
+
+        }
+        input {
+          height: $inputHeight;
+          width: 55%;
+        }
+      }
+
+  }
+  h2{
+    font-weight: bold;
+    font-size: 2em;
+  }
+  pre{
+    font-family: Consolas, Courier, monospace;
+    font-size: 1.5em;
+    padding:2em;
+    margin:10px 0 10px 0;
+    background: $bgColor;
+  }
+}

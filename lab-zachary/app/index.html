@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="cowsayApp">
+<head>
+  <title>Cowsay HTML</title>
+</head>
+<body>
+  <main ng-controller="CowsayController">
+    <section class="container">
+    <h2>{{ cowsayCtrl.title }}</h2>
+      <div class="cowtput">
+        <pre class="cow">{{ cowsayCtrl.theCowSays(cowsayCtrl.text) }}</pre>
+        <input type="text" ng-model="cowsayCtrl.text">
+        <button ng-click="cowsayCtrl.push(cowsayCtrl.text)">Save It!</button>
+        <button ng-click="cowsayCtrl.pop()">Retrieve It!</button>
+      </div>
+    </section>
+    <pre>{{ cowsayCtrl.history }}</pre>
+  </main>
+
+
+</body>
+</html>
